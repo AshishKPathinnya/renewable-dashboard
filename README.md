@@ -2,6 +2,18 @@
 
 This project is a responsive data visualization dashboard developed with React and TypeScript. It showcases global renewable energy trends, including capacity growth, investment patterns, and energy mix statistics from 2015 to 2024. The charts are built using Recharts, and the interface is styled with Tailwind CSS.
 
+## Screenshots
+
+### Dashboard Overview
+![Screenshot 1](Screenshot1.png)
+
+### Chart View
+![Screenshot 2](Screenshot2.png)
+
+### Metric Panel and Trends
+![Screenshot 3](Screenshot3.png)
+
+
 ## Features
 
 - Area chart showing growth in solar, wind, hydro, and total capacity
