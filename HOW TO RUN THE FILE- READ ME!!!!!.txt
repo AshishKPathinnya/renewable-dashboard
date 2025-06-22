@@ -1,0 +1,140 @@
+RENEWABLE ENERGY DASHBOARD – SETUP AND USAGE GUIDE
+
+Overview:
+----------
+This project is a fully responsive dashboard application built using React and TypeScript. 
+It visualizes global renewable energy trends, investments, and adoption statistics from 2015–2024. 
+The interface features interactive charts powered by Recharts, and styling is handled using Tailwind CSS.
+
+This guide explains how to install dependencies, configure Tailwind CSS, and run the application locally.
+
+--------------------------------------------------------------------------------
+System Requirements:
+--------------------------------------------------------------------------------
+- Node.js (version 16 or higher)
+- npm (comes bundled with Node.js)
+
+--------------------------------------------------------------------------------
+Project Folder Structure:
+--------------------------------------------------------------------------------
+renewable-dashboard/
+├── node_modules/                    → Installed dependencies
+├── public/                          → Static assets
+├── src/                             → Application source files
+│   ├── App.tsx                      → Main component loading the dashboard
+│   ├── RenewableEnergyDashboard.tsx→ Dashboard UI and chart logic
+│   ├── index.tsx                    → React DOM entry point
+│   └── index.css                    → Tailwind CSS entry file
+├── tailwind.config.js              → Tailwind configuration
+├── postcss.config.js               → PostCSS plugin configuration
+├── package.json                    → Project metadata and dependencies
+├── package-lock.json               → Exact version lock for dependencies
+└── README.txt                      → This file
+
+--------------------------------------------------------------------------------
+Step-by-Step Installation Instructions:
+--------------------------------------------------------------------------------
+
+1. Open a terminal (Command Prompt, PowerShell, or terminal in VS Code).
+
+2. Navigate to the project directory:
+   > cd path\to\renewable-dashboard
+
+3. Install all required dependencies:
+   > npm install
+
+--------------------------------------------------------------------------------
+Required Dependencies – Manual Installation (if needed):
+--------------------------------------------------------------------------------
+
+If you are setting up from scratch or if `node_modules` is missing, install the following:
+
+1. Initialize the project (skip if package.json already exists):
+
+   > npm init -y
+
+2. Install React, TypeScript, and base dependencies:
+
+   > npm install react react-dom react-scripts  
+   > npm install --save-dev typescript @types/react @types/react-dom
+
+3. Install Recharts and Lucide icons:
+
+   > npm install recharts lucide-react
+
+4. Install Tailwind CSS (v3) and PostCSS tools:
+
+   > npm install -D tailwindcss@3.4.3 postcss autoprefixer
+
+5. Generate Tailwind and PostCSS config files:
+
+   > npx tailwindcss init -p
+
+6. Overwrite postcss.config.js with this content:
+
+   module.exports = {
+     plugins: {
+       tailwindcss: {},
+       autoprefixer: {},
+     },
+   };
+
+7. Add the following to your src/index.css file:
+
+   @tailwind base;
+   @tailwind components;
+   @tailwind utilities;
+
+--------------------------------------------------------------------------------
+Running the Application:
+--------------------------------------------------------------------------------
+
+To start the development server, run:
+
+> npm start
+
+This will launch the dashboard at:
+http://localhost:3000
+
+If the page does not open automatically, open your browser and navigate to the above URL.
+
+--------------------------------------------------------------------------------
+Key Features of the Application:
+--------------------------------------------------------------------------------
+
+- Displays renewable energy capacity data from 2015 to 2024
+- Interactive area chart with selectable metrics (Total, Solar, Wind, Hydro)
+- Pie chart illustrating the current energy mix
+- Bar chart comparing renewable energy usage by country
+- Line chart showing correlation between investment and new capacity
+- Responsive layout for desktop and mobile devices
+- Uses Recharts for all chart visualizations
+- Styled using Tailwind CSS utility classes
+
+--------------------------------------------------------------------------------
+Technology Stack:
+--------------------------------------------------------------------------------
+
+- React 19 (Frontend library)
+- TypeScript (Type-safe JavaScript)
+- Tailwind CSS 3 (CSS utility framework)
+- Recharts (Charting library)
+- Lucide React (Icon set)
+
+--------------------------------------------------------------------------------
+Troubleshooting:
+--------------------------------------------------------------------------------
+
+1. If `npm start` fails with a Tailwind or PostCSS error:
+   - Ensure `postcss.config.js` contains the correct plugin format (as shown above)
+   - Delete the `node_modules` folder and `package-lock.json`, then reinstall:
+     > rd /s /q node_modules  
+     > del package-lock.json  
+     > npm install
+
+2. If ports are busy, try running the app on a different port:
+   > set PORT=3001 && npm start
+
+--------------------------------------------------------------------------------
+End of Instructions
+--------------------------------------------------------------------------------
