@@ -1,46 +1,75 @@
-# Getting Started with Create React App
+# Renewable Energy Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a responsive data visualization dashboard developed with React and TypeScript. It showcases global renewable energy trends, including capacity growth, investment patterns, and energy mix statistics from 2015 to 2024. The charts are built using Recharts, and the interface is styled with Tailwind CSS.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Area chart showing growth in solar, wind, hydro, and total capacity
+- Pie chart representing the 2024 global energy mix
+- Bar chart comparing renewable capacity across key countries
+- Line chart tracking correlation between investment and capacity
+- Responsive layout optimized for desktop and mobile
+- Modular TypeScript codebase for scalability
 
-### `npm start`
+## Technology Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React 19
+- TypeScript
+- Tailwind CSS v3
+- Recharts
+- Lucide React (icon library)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (v16 or higher)
+- npm (Node package manager)
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+Running the App
+bash
+Copy
+Edit
+npm start
+Then visit: http://localhost:3000
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Tailwind Configuration
+Ensure postcss.config.js contains:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+js
+Copy
+Edit
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+};
+And src/index.css includes:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+css
+Copy
+Edit
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+Project Structure
+lua
+Copy
+Edit
+/renewable-dashboard
+├── src/
+│   ├── App.tsx
+│   ├── RenewableEnergyDashboard.tsx
+│   ├── index.tsx
+│   └── index.css
+├── tailwind.config.js
+├── postcss.config.js
+├── package.json
+└── README.md
+License
+This project is provided for educational and demonstration purposes.
