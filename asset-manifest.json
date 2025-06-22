@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/renewable-dashboard/static/css/main.72ff4f54.css",
+    "main.js": "/renewable-dashboard/static/js/main.7cdfb220.js",
+    "static/js/453.c86fe5bf.chunk.js": "/renewable-dashboard/static/js/453.c86fe5bf.chunk.js",
+    "index.html": "/renewable-dashboard/index.html",
+    "main.72ff4f54.css.map": "/renewable-dashboard/static/css/main.72ff4f54.css.map",
+    "main.7cdfb220.js.map": "/renewable-dashboard/static/js/main.7cdfb220.js.map",
+    "453.c86fe5bf.chunk.js.map": "/renewable-dashboard/static/js/453.c86fe5bf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.72ff4f54.css",
+    "static/js/main.7cdfb220.js"
+  ]
+}
